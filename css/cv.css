@@ -1,0 +1,30 @@
+.head{
+    text-align:center; 
+    font-family:'Verdana';
+    opacity: 0.9;
+    color:black;
+    
+    font-weight: 400;
+}
+.navigation{
+    background-color: black;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.selection{
+    width:30em;
+    margin-left:auto;
+    margin-right:auto;
+}
+.padding{
+    margin:0.2em;
+}
+.pan{
+   height:15em;
+}
+.box{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    border-radius:25px;
+}
