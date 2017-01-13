@@ -37,12 +37,12 @@ function init(){
 }
 
 function move(etc){
-    
-   if(value[etc] < 1500) value[etc] += 3;
+    var length = document.getElementById("peep").offsetWidth-60;
+   if(value[etc] < length) value[etc] += 3;
    else value[etc] = 0;
     document.getElementById(etc).style.left = value[etc] + "px";
      
 }
-
+alert();
 init();
 
