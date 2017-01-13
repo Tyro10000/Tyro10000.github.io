@@ -43,6 +43,6 @@ function move(etc){
     document.getElementById(etc).style.left = value[etc] + "px";
      
 }
-alert();
+
 init();
 
