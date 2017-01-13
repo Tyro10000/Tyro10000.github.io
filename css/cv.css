@@ -3,8 +3,9 @@
     font-family:'Verdana';
     opacity: 0.9;
     color:black;
-    
+    height:300px;
     font-weight: 400;
+    z-index: 10;
 }
 .navigation{
     background-color: black;
@@ -27,4 +28,31 @@
     height:200px;
     border:2px solid black;
     border-radius:25px;
+}
+.stroke{
+    position: absolute;
+    width:50px;
+    height:5px;
+    top:150px;
+    background-color: #13ffff;
+   z-index: -1;
+}
+.front{
+    z-index: -1;
+}
+.selected{
+    background-color:#00C1FF;
+    color:white;
+
+}
+.imgbox{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius:50px;
+    display:inline-block;
+    text-align: center;
+    padding-top:12px;
+    
+
 }
