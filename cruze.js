@@ -6,8 +6,8 @@ var generator;
 var poke = 1;
 var length = 0;
 function init(){
-    for(i = 1;i < 9;i++){
-        degree += 25;
+    for(i = 1;i < 10;i++){
+        degree += 27;
         document.getElementById(i).style.top = degree + "px";
         document.getElementById(i).style.left = length + "px";
         length += 150;
@@ -31,13 +31,15 @@ function init(){
     chain[7] =  setInterval(function(){ move(7) }, generator);
     generator = Math.floor((Math.random() * 15) + 10);
     chain[8] =  setInterval(function(){ move(8) }, generator);
+    generator = Math.floor((Math.random() * 20) + 10);
+    chain[9] =  setInterval(function(){ move(9) }, generator);
    
 
    
 }
 
 function move(etc){
-    var length = document.getElementById("peep").offsetWidth-60;
+    var length = document.getElementById("peep").offsetWidth-50;
    if(value[etc] < length) value[etc] += 3;
    else value[etc] = 0;
     document.getElementById(etc).style.left = value[etc] + "px";
