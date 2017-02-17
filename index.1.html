@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Connect 4">
+    <meta name="keywords" content="Connect,Connect4,Connect Four,Play Connect-4,Connect-4">
+    <meta name="author" content="Tyrone McElrath">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="dash.css">
+    <title>Tyrone's box</title>
+</head>
+
+<body>
+    <!-- <ul class="row navigation">
+        <div class="selection">
+            <a href="index.html"><button class="btn btn-default selected">Home</button></a>
+            <a href="Resume.html"><button class="btn btn-default">CV</button></a>
+            <a href="projects.html"><button class="btn btn-default">Projects</button></a>
+            <a href="about.html"><button class="btn btn-default">About</button></a>
+            <a href="contact.html"><button class="btn btn-default">Contact me</button></a>
+        </div>
+    </ul>-->
+    <div class="face">
+        <div class="face_head">
+            <p>Hello!</p>
+            <p>I'm Tyrone McElrath</p>
+            <p>A 3/4th Stack Developerrrrrish?</p>
+            <div class="strip"></div>
+            <div class="menu">
+                <button class="btn" onclick="expand(1)">About <i class="fa fa-star" id="point1" aria-hidden="true"></i></button>
+                <button class="btn" onclick="expand(2)">Skills  <i class="fa fa-star" id="point2" aria-hidden="true"></i></button>
+                <button class="btn" onclick="expand(3)">Experience <i class="fa fa-star" id="point3" aria-hidden="true"></i></button>
+                <button class="btn" onclick="expand(4)">Contact Me <i class="fa fa-star" id="point4" aria-hidden="true"></i></button>
+            </div>
+            <div class="projects">
+
+                <button class="btn_sec " onclick="flip(1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <div class="image " id="image_holder">
+                    <img src="pics/pik1.png" class="image_current" />
+                </div>
+                <button class="btn_sec " onclick="flip(-1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="frame" id="4" style="text-align:center ">
+        <h2>Hire Me</h2>
+        <h5><i class="fa fa-envelope-open-o" aria-hidden="true"></i> tmcelrat@kent.edu</h5>
+        <h5><i class="fa fa-phone" aria-hidden="true"></i> 216-333-3958</h5>
+        <a href="www.linkedin.com/in/tyroneMcelrath"><button class="btn mid link"><i class="fa fa-folder-o" aria-hidden="true"></i> Linkedin</button></a>
+        <a href="https://github.com/Tyro10000"><button class="btn mid link"><i class="fa fa-inbox" aria-hidden="true"></i>GitHub</button></a>
+        <button class="btn mid " onclick="expand(4)"><i class="fa fa-angle-down"  aria-hidden="true"></i></button>
+
+    </div>
+    <div class="frame" id="3">
+        <h2 style="text-align:center "><i class="fa fa-code" aria-hidden="true"></i> Experience</h2>
+        <h3>Kent State | IS Server Team</h3>
+        <ul>
+            <li>Local support, OS Installs,Server Reboots</li>
+            <li>Documentation and flow diagams</li>
+        </ul>
+        <h3>Kent State | Helpdesk</h3>
+        <ul>
+            <li>Troubleshot small software, Login, and hardware problems</li>
+            <li>Answered General questions about campus and events</li>
+        </ul>
+
+        <h3>Avatar Fleet | Programmer</h3>
+        <ul>
+            <li>Helped In the software development cycle of software products</li>
+            <li>Developed additional functionality for product.</li>
+        </ul>
+        <button class="btn mid " onclick="expand(3)"><i class="fa fa-angle-down"  aria-hidden="true"></i></button>
+    </div>
+
+    <div class="frame" id="2">
+        <h2 style="text-align:center ">Skills</h2>
+        <p>Html/Css</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:80% "></div>
+        </div>
+        <p>Javascript/JQuery</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:60% "></div>
+        </div>
+        <p>PHP</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:55% "></div>
+        </div>
+        <p>SQL</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:30% "></div>
+        </div>
+        <p>C#</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:50% "></div>
+        </div>
+        <p>Univeral Windows Platform/MVC</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:60% "></div>
+        </div>
+        <p>Bootstrap/CakePHP</p>
+        <div class="progress_bar ">
+            <div class="progress_bar_status " style="width:65% "></div>
+        </div>
+        <button class="btn mid " onclick="expand(2)"><i class="fa fa-angle-down"  aria-hidden="true"></i></button>
+    </div>
+    <div class="frame" id="1">
+        <h2 style="text-align:center ">About Me</h2>
+        <p>Hi! I like to eat.I like to code.I like to code while eating.I also Enjoy weightlifting amd was captain of the Tennis Team in high school</p>
+        <p>I Want to be is Simple.I want to working on developing software and grow My knowledge in the field.I believe that I would be a good Fit for any company looking For a young programmer who can meld nicely into the structure of the company.</p>
+        <h4>Education</h4>
+        <li>Kent State University</li>
+        <li>Computer Science</li>
+        <li>GPA 3.1 | Dean's list</li>
+        <li>President of Stem Scholars</li>
+        <button class="btn mid " onclick="expand(1)"><i class="fa fa-angle-down"  aria-hidden="true"></i></button>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="dash.js "></script>
+
+</html>

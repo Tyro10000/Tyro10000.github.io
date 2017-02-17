@@ -1,0 +1,180 @@
+.face {
+    position: fixed;
+    width: 100%;
+    height: 720px;
+    background-color: #06888E;
+    padding-top: 50px;
+    padding-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.face_head {
+    color: white;
+    font-size: 50px;
+    width: 80%;
+}
+
+body {
+    margin: 0;
+}
+
+#point1,
+#point2,
+#point3,
+#point4 {
+    display: none;
+}
+
+.frame {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 40px;
+    color: white;
+    left: 60%;
+    width: 20%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    display: none;
+    font-size: 20px;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin-right: 50px;
+}
+
+.projects {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 40px;
+    color: white;
+    width: 600px;
+    opacity: 0.9;
+    font-size: 20px;
+}
+
+.scroll {
+    position: relative;
+    bottom: 0;
+    width: 100px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #29526D;
+    background-color: #522B72;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn_sec {
+    vertical-align: top;
+    margin: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #29526D;
+    background-color: #522B72;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+}
+
+.link {
+    background-color: #B38118;
+}
+
+.strip {
+    width: 100%;
+    height: 5px;
+    border-top: 1px solid white;
+}
+
+.btn:hover {
+    position: relative;
+    top: -2px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+    top: 2px;
+}
+
+.mid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress_bar {
+    width: 250px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.image {
+    width: 300px;
+    height: 225px;
+    border: 1px solid green;
+    display: inline-block;
+}
+
+.image_current {
+    width: 100%;
+    height: 100%;
+}
+
+.progress_bar_status {
+    margin: 0px;
+    height: 100%;
+    background: lightblue;
+    border-radius: 5px 0px 0px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="face_head"] {
+        font-size: 25px;
+    }
+    [class*="face"] {
+        padding-top: 5px;
+        padding-left: 5px;
+        top: 0;
+    }
+    [class*="projects"] {
+        display: none;
+    }
+    [class*="frame"] {
+        position: relative;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-right: 15px;
+        left: 0;
+        width: 90%;
+        height: 700px;
+        background: black;
+        display: none;
+        font-size: 12px;
+    }
+}
