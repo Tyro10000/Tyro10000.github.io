@@ -1,7 +1,7 @@
 .face {
     position: fixed;
     width: 100%;
-    height: 730px;
+    height: 100%;
     background-color: #06888E;
     padding-top: 50px;
     padding-left: 100px;
@@ -48,14 +48,32 @@ body {
 }
 
 .projects {
+    text-align: center;
+    position: fixed;
     vertical-align: top;
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 40px;
-    color: white;
-    width: 600px;
+    width: 100%;
+    height: 20px;
+    background-color: white;
     opacity: 0.9;
     font-size: 20px;
+    z-index: 3;
+}
+
+.projects_extend {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    opacity: 0.99;
+    font-size: 20px;
+    display: block;
+    ;
+    z-index: 2;
 }
 
 .scroll {
@@ -88,10 +106,8 @@ body {
 }
 
 .btn_sec {
-    vertical-align: top;
     margin: 10px;
-    display: inline-block;
-    width: 50px;
+    width: 260px;
     height: 50px;
     background-color: #29526D;
     background-color: #522B72;
@@ -111,6 +127,12 @@ body {
     width: 100%;
     height: 5px;
     border-top: 1px solid white;
+}
+
+.strip2 {
+    width: 70%;
+    height: 5px;
+    border-top: 1px solid black;
 }
 
 .btn:hover {
@@ -139,7 +161,6 @@ body {
     width: 300px;
     height: 225px;
     border: 1px solid green;
-    display: inline-block;
 }
 
 .image_current {
@@ -169,16 +190,13 @@ a {
         padding-left: 5px;
         top: 0;
     }
-    [class*="projects"] {
-        display: none;
-    }
     [class*="frame"] {
         position: relative;
         padding-left: 20px;
         padding-top: 10px;
-        padding-right: 15px;
+        padding-right: 50px;
         left: 0;
-        width: 90%;
+        width: 93%;
         height: 700px;
         background: black;
         display: none;

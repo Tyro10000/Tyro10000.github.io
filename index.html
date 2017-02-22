@@ -14,20 +14,11 @@
 </head>
 
 <body>
-    <!-- <ul class="row navigation">
-        <div class="selection">
-            <a href="index.html"><button class="btn btn-default selected">Home</button></a>
-            <a href="Resume.html"><button class="btn btn-default">CV</button></a>
-            <a href="projects.html"><button class="btn btn-default">Projects</button></a>
-            <a href="about.html"><button class="btn btn-default">About</button></a>
-            <a href="contact.html"><button class="btn btn-default">Contact me</button></a>
-        </div>
-    </ul>-->
     <div class="face">
         <div class="face_head">
             <p>Hello!</p>
             <p>I'm Tyrone McElrath</p>
-            <p>A 3/4th Stack Developerrrrrish?</p>
+            <p><strike>A 3/4th Stack Developerrrrish?</strike> Programmer</p>
             <div class="strip"></div>
             <div class="menu">
                 <button class="btn" onclick="expand(1)">About <i class="fa fa-star" id="point1" aria-hidden="true"></i></button>
@@ -35,25 +26,37 @@
                 <button class="btn" onclick="expand(3)">Experience <i class="fa fa-star" id="point3" aria-hidden="true"></i></button>
                 <button class="btn" onclick="expand(4)">Contact Me <i class="fa fa-star" id="point4" aria-hidden="true"></i></button>
             </div>
-            <!-- <div class="projects">
 
-                <button class="btn_sec " onclick="flip(1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-                <div class="image " id="image_holder">
-                    <img src="pics/pik1.png" class="image_current" />
-                </div>
-                <button class="btn_sec " onclick="flip(-1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 
-            </div>-->
+
+
+
         </div>
 
+    </div>
+    <div class="projects" onclick="show()">
+        <i class="fa fa-angle-down" id="" aria-hidden="true"></i>
+
+    </div>
+    <div class="projects_extend">
+        <h2>Projects</h2>
+        <div class="strip2"></div>
+        <button class="btn_sec " onclick="flip(1)"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+        <h2 id="img_sum">Connect-4</h2>
+        <div class="image " id="image_holder">
+            <img src="pics/pik1.png" class="image_current" />
+        </div>
+        <button class="btn_sec " onclick="flip(-1)"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
     </div>
     <div class="frame" id="4" style="text-align:center ">
         <h2>Hire Me</h2>
         <h5><i class="fa fa-envelope-open-o" aria-hidden="true"></i> tmcelrat@kent.edu</h5>
         <h5><i class="fa fa-phone" aria-hidden="true"></i> 216-333-3958</h5>
+        <a href="tyrone.mcelrath_resume.docx" download><button class="btn mid link"><i class="fa fa-book" aria-hidden="true"></i> Download Resume</button></a>
         <a href="https://www.linkedin.com/in/tyroneMcelrath"><button class="btn mid link"><i class="fa fa-folder-o" aria-hidden="true"></i> Linkedin</button></a>
-        <a href="https://github.com/Tyro10000"><button class="btn mid link"><i class="fa fa-inbox" aria-hidden="true"></i>GitHub</button></a>
+        <a href="https://github.com/Tyro10000"><button class="btn mid link"><i class="fa fa-inbox" aria-hidden="true"></i> GitHub</button></a>
         <button class="btn nav mid " onclick="expand(4)"><i class="fa fa-angle-up"  aria-hidden="true"></i></button>
+        <button class="btn nav mid " onclick="expunge()"><i class="fa fa-times"  aria-hidden="true"></i></button>
 
     </div>
     <div class="frame" id="3">
