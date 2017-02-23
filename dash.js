@@ -30,16 +30,16 @@ function flip(etx) {
     $("#image_holder").html('<img src="pics/pik' + pick + '.png " class="image_current " />');
     switch (pick) {
         case 1:
-            document.getElementById("img_sum").innerHTML = "Connect-4";
+            $(".img_sum").html('<h2>Connect-4</h2><p>Single page Application Using html,Javascript and Phonegap</p><a href="https://connect4player.github.io" /><button class="btn mid link"><i class="fa fa-inbox" aria-hidden="true"></i> Go to Web App</button></a>');
             break;
         case 2:
-            document.getElementById("img_sum").innerHTML = "Connect-4";
+            $(".img_sum").html('<h2>Connect-4</h2><p>Single page Application Using html,Javascript and Phonegap</p><a href="https://connect4player.github.io" /><button class="btn mid link"><i class="fa fa-inbox" aria-hidden="true"></i> Go to Web App</button></a>');
             break;
         case 3:
-            document.getElementById("img_sum").innerHTML = "Hotel Class Project";
+            $(".img_sum").html('<h2>Hotel Class Project</h2><p>Hotel Management System that supplies all needed functionality into a simple UI</p>');
             break;
         case 4:
-            document.getElementById("img_sum").innerHTML = "Hotel Class Project";
+            $(".img_sum").html('<h2>Hotel Class Project</h2><p>Hotel Management System that supplies all needed functionality into a simple UI</p>');
             break;
 
 
